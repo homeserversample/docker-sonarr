@@ -9,7 +9,7 @@ services:
       - TZ=Etc/UTC
     volumes:
       - ./config:/config
-      - ./data:/data
+      - ${SERVERS}/data:/data
       # - /path/to/tvseries:/tv #optional
       # - /path/to/downloadclient-downloads:/downloads #optional
     ports:
